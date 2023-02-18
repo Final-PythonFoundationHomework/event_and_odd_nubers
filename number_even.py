@@ -5,18 +5,18 @@ var_int = 7264
 answer = 0
 
 x1 = var_int % 10
-answer += (x1 + 1) % 2      #   (4 + 1) % 2     answer = answer + (x1 + 1) % 2
+answer += x1 % 2      #   (4 + 1) % 2     answer = answer + (x1 + 1) % 2
 var_int //= 10
 
 x2 = var_int % 10
-answer += (x2 + 1) % 2      #   (6 + 1) % 2
+answer += x2 % 2      #   (6 + 1) % 2
 var_int //= 10
 
 x3 = var_int % 10
-answer += (x3 + 1) % 2      #   (2 + 1) % 2
+answer += x3 % 2      #   (2 + 1) % 2
 var_int //= 10
 
 x4 = var_int % 10
-answer += (x4 + 1) % 2      #   (7 + 1) % 2
+answer += x4 % 2      #   (7 + 1) % 2
 
 print(answer)
